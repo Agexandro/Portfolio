@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     user-select: none;
+    font-family: Gabriela;
 }
 
 body {
@@ -18,10 +19,15 @@ main {
     width: 100%;
 }
 
+.title {
+    background-color: white;
+    width: 6em;
+    padding: .4em;
+}
+
 .white-space {
     font-size: 14pt;
     letter-spacing: 1pt;
-    font-family: Gabriela;
     background-color: dimgrey;
     color: white;
     user-select: none;
@@ -74,7 +80,6 @@ main {
 .content {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background-color: white;
-    font-family: Gabriela;
     font-size: 14pt;
     letter-spacing: 1pt;
     color: black;
