@@ -33,7 +33,6 @@ main {
     user-select: none;
     height: 100vh;
     width: 14em;
-    padding: 2em;
     overflow-y: scroll;
     display: flex;
     flex-flow: column;
@@ -46,18 +45,22 @@ main {
     flex-flow: column;
     list-style: none;
     width: 100%;
-    margin: 2em 0em 0em 0em;
+    padding: 2em;
+}
+
+.photo,
+.links {
+    padding: 2em 2em 0 2em;
 }
 
 .links li {
-    width: 100%;
     border-bottom: 1px solid lightgray;
+    list-style-type: none;
 }
 
 .links li a {
     display: block;
     width: 100%;
-    height: 100%;
     padding: 1em;
 }
 
@@ -100,4 +103,47 @@ main {
 
 .scroll::-webkit-scrollbar-thumb {
     background-color: dimgrey;
+}
+
+#menu {
+    display: none;
+    position: fixed;
+    bottom: 0em;
+    left: -1.5em;
+}
+
+.material-symbols-outlined {
+    font-size: 5em;
+}
+
+@media only screen and (max-width: 680px) {
+
+    #menu {
+        display: block;
+    }
+
+    .white-space {
+        position: fixed;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0em;
+        width: 0vw;
+        z-index: 1;
+        transition: width .500s;
+    }
+
+    .animate {
+        overflow: scroll;
+        width: 100%;
+        transition: width .500s;
+    }
+}
+
+@media only screen and (max-width: 408px) {
+
+    .content {
+        padding: 1em;
+    }
 }
