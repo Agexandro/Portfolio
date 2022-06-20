@@ -22,3 +22,14 @@ hr {
     padding: 2em;
     background-color: rgba(211, 211, 211, 0.438);
 }
+
+@media only screen and (max-width: 408px) {
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+        grid-gap: 1em;
+    }
+
+    .skills-card, .skills li {
+        padding: 1em;
+    }
+}
