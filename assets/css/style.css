@@ -89,6 +89,19 @@ main {
     padding: 2em;
 }
 
+.contact section {
+    font-size: .9em;
+    margin-top: 2em;
+    width: 100%;
+    text-align: center;
+}
+
+.contact section a {
+    display: inline-block;
+    padding-top: 1em;
+    color: white;
+}
+
 .sm-scroll::-webkit-scrollbar {
     width: .1em;
 }
@@ -106,10 +119,41 @@ main {
 }
 
 #menu {
+    width: 2em;
+    height: 2em;
     display: none;
     position: fixed;
-    bottom: 0em;
-    left: -1.5em;
+    bottom: 1em;
+    left: 1em;
+    z-index: 3;
+    transition: transform .2s ease;
+    animation-name: bounce;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    background-color: black;
+}
+
+@keyframes bounce {
+    0% {
+        background-color: black;
+    }
+
+    50% {
+        background-color: darkgrey;
+
+    }
+
+    100% {
+        background-color: black;
+    }
+
+}
+
+.grow {
+    background-color: red;
+    transform: rotate(180deg);
+    transition: transform .5s ease;
+    background-color: white !important;
 }
 
 .material-symbols-outlined {
