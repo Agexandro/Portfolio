@@ -27,5 +27,6 @@ function showPage(page = "", title = "Home") {
 }
 
 function displayMenu() {
+    $("#menu").toggleClass("grow");
     $(".white-space").toggleClass("animate");
 }
